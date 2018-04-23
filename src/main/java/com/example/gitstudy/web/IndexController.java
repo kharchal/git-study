@@ -21,7 +21,10 @@ public class IndexController {
     @RequestMapping("/msg")
     public String msg(Model model) {
         LocalDateTime now = LocalDateTime.now();
+        // putting date time info to the model
         model.addAttribute("msg", now);
+        //
         return "index";
+
     }
 }
